@@ -41,12 +41,10 @@ class Login {
                 $user_data = $result[0];
                 return $user_data;
             }else{
-                header("Location: login.php");
-                die;
+                return false;
             }
                 }else{
-                    header("Location: login.php");
-                    die;
+                    return false;
                 }
     }
 }
